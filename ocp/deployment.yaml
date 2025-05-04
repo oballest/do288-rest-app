@@ -32,7 +32,7 @@ spec:
         - name: SECRET
           value: secret env
         image: image-registry.openshift-image-registry.svc:5000/pipelines/quarkus-app:latest
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         livenessProbe:
           failureThreshold: 3
           httpGet:
